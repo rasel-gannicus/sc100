@@ -1,0 +1,136 @@
+import Link from "next/link";
+import Image from "next/image";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+
+const Footer = () => {
+  return (
+    <footer className="bg-black text-white">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Logo and Description */}
+          <div className="space-y-3">
+            <Link href="/" className="inline-block">
+              <Image
+                src="/images/logo.png"
+                alt="Logo"
+                width={150}
+                height={30}
+                className="h-8 w-auto"
+              />
+            </Link>
+            <p className="text-xs text-gray-300">
+              বুড়িচং আনন্দ পাইলট সরকারী উচ্চ বিদ্যালয়ের প্রাক্তন শিক্ষার্থীদের
+              উদ্যোগে শতবর্ষ-২০২৫ উদযাপন
+            </p>
+            <div className="flex space-x-4">
+              <Link
+                href="#"
+                className="hover:text-yellow-500 transition-colors"
+              >
+                <FaFacebookF size={16} />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-yellow-500 transition-colors"
+              >
+                <FaTwitter size={16} />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-yellow-500 transition-colors"
+              >
+                <FaInstagram size={16} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-yellow-500 text-base font-semibold mb-3">
+              Our Services
+            </h3>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>
+                <Link
+                  href="/"
+                  className="hover:text-yellow-500 transition-colors"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="hover:text-yellow-500 transition-colors"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/registration"
+                  className="hover:text-yellow-500 transition-colors"
+                >
+                  Registration Team
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/constitution"
+                  className="hover:text-yellow-500 transition-colors"
+                >
+                  Constitution
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="hover:text-yellow-500 transition-colors"
+                >
+                  Contact us
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-yellow-500 text-base font-semibold mb-3">
+              Get in Touch
+            </h3>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>2A/12 Alba Tower, Pallabi, Dhaka-1216, Bangladesh</li>
+              <li>
+                <Link
+                  href="mailto:info@demo.com"
+                  className="hover:text-yellow-500 transition-colors"
+                >
+                  info@baitsbd.com
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="tel:+8801717-274777"
+                  className="hover:text-yellow-500 transition-colors"
+                >
+                  +8801923240700
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Copyright */}
+      <div className="border-t border-gray-800">
+        <div className="container mx-auto px-4 py-3">
+          <p className="text-center text-xs text-gray-400">
+            © 2023 All Rights Reserved by Burichang Pilot School
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
