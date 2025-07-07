@@ -7,6 +7,7 @@ import { useState } from "react";
 const AlumniHistory = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
+  const [showAll, setShowAll] = useState(false);
 
   const images = [
     "/images/gallery/gallery-1.jpeg",
@@ -48,11 +49,14 @@ const AlumniHistory = () => {
     src: img,
   }));
 
+  // Get first 12 images or all images based on state
+  const displayedImages = showAll ? images : images.slice(0, 12);
+
   return (
     <section className="py-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {images.map((image, index) => (
+          {displayedImages.map((image, index) => (
             <div
               key={index}
               className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow group cursor-pointer"
@@ -75,6 +79,17 @@ const AlumniHistory = () => {
             </div>
           ))}
         </div>
+
+        {!showAll && images.length > 12 && (
+          <div className="text-center mt-8">
+            <button
+              onClick={() => setShowAll(true)}
+              className="bg-yellow-500 text-white px-6 py-2 rounded-md hover:bg-yellow-600 transition-colors"
+            >
+              Show All ({images.length - 12} more)
+            </button>
+          </div>
+        )}
 
         <Lightbox
           open={isOpen}

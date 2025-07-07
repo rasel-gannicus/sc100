@@ -12,7 +12,7 @@ const BatchContainer = () => {
       phone: "+8801717-274777",
       id: "1133",
       blood: "B+",
-      image: "/images/students/student1.jpg",
+      image: "/images/students/user.png",
     },
     {
       name: "Sehab Rahman",
@@ -20,7 +20,7 @@ const BatchContainer = () => {
       phone: "+8801717-274777",
       id: "1133",
       blood: "B+",
-      image: "/images/students/student2.jpg",
+      image: "/images/students/user.png",
     },
     {
       name: "Anwar Hossain",
@@ -28,7 +28,7 @@ const BatchContainer = () => {
       phone: "+8801717-274777",
       id: "1133",
       blood: "B+",
-      image: "/images/students/student3.jpg",
+      image: "/images/students/user.png",
     },
     {
       name: "MD SABBIR HOSSAIN",
@@ -36,7 +36,7 @@ const BatchContainer = () => {
       phone: "+8801717-274777",
       id: "1133",
       blood: "B+",
-      image: "/images/students/student4.jpg",
+      image: "/images/students/user.png",
     },
   ];
 
@@ -46,11 +46,11 @@ const BatchContainer = () => {
       <div className="relative h-[400px] bg-black">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-50"
-          style={{ backgroundImage: "url('/images/hero.jpg')" }}
+          style={{ backgroundImage: "url('/images/hero.png')" }}
         />
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-            আমরা পাইলটিয়ানস
+            আমরা স্বরূপচন্দ্রীয়ান
           </h1>
           <p className="text-xl text-center mb-8">
             ইতিমধ্যে আমরা যারা রেজিস্ট্রেশন সম্পন্ন করেছি তাদের ব্যাচ ভিত্তিক

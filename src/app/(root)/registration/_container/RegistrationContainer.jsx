@@ -24,6 +24,17 @@ const RegistrationContainer = () => {
   const batchYears = Array.from({ length: 30 }, (_, i) =>
     (2026 - i).toString()
   );
+  const union = [
+    "কলকলিয়া ইউনিয়ন", 
+    "পাটলি ইউনিয়ন", 
+    "মিরপুর ইউনিয়ন", 
+    "জগন্নাথপুর পৌরসভা", 
+    "চিলাউড়া হলদিপুর ইউনিয়ন", 
+    "সৈয়দপুর শাহারপাড়া ইউনিয়ন", 
+    "আশারকান্দি ইউনিয়ন", 
+    "পাইলগাঁও ইউনিয়ন", 
+    "অন্যান্য", 
+  ]
 
   const handleInputChange = (e) => {
     const { name, value, files } = e.target;
@@ -131,6 +142,26 @@ const RegistrationContainer = () => {
                   onChange={handleInputChange}
                   className="w-full p-2 border rounded"
                 />
+              </div>
+
+              <div className="space-y-2">
+                <label className="block text-gray-700">
+                  Union/Pouroshova
+                </label>
+                <select
+                  name="union"
+                  value={formData.batch}
+                  onChange={handleInputChange}
+                  className="w-full p-2 border rounded"
+                  required
+                >
+                  <option value="">Select</option>
+                  {union.map((year) => (
+                    <option key={year} value={year}>
+                      {year}
+                    </option>
+                  ))}
+                </select>
               </div>
 
               <div className="space-y-2">

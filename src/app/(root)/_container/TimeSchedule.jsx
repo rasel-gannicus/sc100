@@ -3,13 +3,6 @@ import Link from "next/link";
 const TimeSchedule = () => {
   const schedules = [
     {
-      date: "25",
-      month: "MAY 2026",
-      day: "SATURDAY",
-      title: "গর্ভবতী মা পুরস্কার",
-      link: "/notice/1",
-    },
-    {
       date: "20",
       month: "MAY 2026",
       day: "SATURDAY",
