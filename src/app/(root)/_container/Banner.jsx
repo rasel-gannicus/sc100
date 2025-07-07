@@ -20,11 +20,11 @@ const Banner = () => {
       <div className="relative z-10 container mx-auto px-4 pt-32 pb-24">
         <div className="text-center text-white space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            শতবর্ষ উদযাপন-২০২৫
+            শতবর্ষ উদযাপন-২০২৬
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            বুড়িচং আনন্দ পাইলট সরকারী উচ্চ বিদ্যালয়ের প্রাক্তন শিক্ষার্থীদের
-            উদ্যোগে শতবর্ষ-২০২৫ উদযাপন
+            স্বরূপচন্দ্র সরকারী উচ্চ বিদ্যালয়ের প্রাক্তন শিক্ষার্থীদের উদ্যোগে
+            শতবর্ষ-২০২৬ উদযাপন
           </p>
         </div>
 

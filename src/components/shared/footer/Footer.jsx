@@ -15,12 +15,12 @@ const Footer = () => {
                 alt="Logo"
                 width={150}
                 height={30}
-                className="h-8 w-auto"
+                className="h-40 w-auto"
               />
             </Link>
             <p className="text-xs text-gray-300">
-              বুড়িচং আনন্দ পাইলট সরকারী উচ্চ বিদ্যালয়ের প্রাক্তন শিক্ষার্থীদের
-              উদ্যোগে শতবর্ষ-২০২৫ উদযাপন
+              স্বরূপচন্দ্র সরকারী উচ্চ বিদ্যালয়ের প্রাক্তন শিক্ষার্থীদের
+              উদ্যোগে শতবর্ষ-২০২৬ উদযাপন
             </p>
             <div className="flex space-x-4">
               <Link
@@ -125,7 +125,7 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-3">
           <p className="text-center text-xs text-gray-400">
-            © 2023 All Rights Reserved by Burichang Pilot School
+            © 2023 All Rights Reserved by Sharupchandra Pilot School
           </p>
         </div>
       </div>

@@ -16,9 +16,9 @@ const Navbar = () => {
               <Image
                 src="/images/logo.png"
                 alt="School Logo"
-                width={200}
-                height={40}
-                className="h-10  w-40 md:w-full"
+                width={400}
+                height={400}
+                className=" h-15   w-full md:w-full"
               />
             </Link>
           </div>

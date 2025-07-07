@@ -4,23 +4,23 @@ const TimeSchedule = () => {
   const schedules = [
     {
       date: "25",
-      month: "MAY 2025",
+      month: "MAY 2026",
       day: "SATURDAY",
       title: "গর্ভবতী মা পুরস্কার",
       link: "/notice/1",
     },
     {
       date: "20",
-      month: "MAY 2025",
+      month: "MAY 2026",
       day: "SATURDAY",
-      title: "শতবর্ষ উদযাপন-২০২৫ এর ব্যাংক একাউন্ট",
+      title: "শতবর্ষ উদযাপন-২০২৬ এর ব্যাংক একাউন্ট",
       link: "/notice/2",
     },
     {
       date: "18",
-      month: "MAY 2025",
+      month: "MAY 2026",
       day: "SATURDAY",
-      title: "শতবর্ষ উদযাপন-২০২৫ এর অনুষ্ঠান সমসূচি",
+      title: "শতবর্ষ উদযাপন-২০২৬ এর অনুষ্ঠান সমসূচি",
       link: "/notice/3",
     },
   ];

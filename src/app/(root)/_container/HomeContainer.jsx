@@ -12,7 +12,7 @@ export default function HomeContainer() {
         <TimeSchedule />
         <div className="py-16 bg-gray-50">
           <h2 className="text-3xl font-bold text-center mb-12 text-black">
-            প্রাক্তন শিক্ষার্থীদের উদ্যোগে শতবর্ষ-২০২৫
+            প্রাক্তন শিক্ষার্থীদের উদ্যোগে শতবর্ষ-২০২৬
           </h2>
           <AlumniHistory />
         </div>
