@@ -33,7 +33,7 @@ jobs:
 
       - name: 🚀 Connect and Pull from VPS
         run: |
-          ssh my-vps "cd ${{ secrets.WORK_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && npm install && npm run build && pm2 restart 7"
+          ssh my-vps "cd ${{ secrets.WORK_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && git pull && npm install && npm run build && pm2 restart 9"
 
       - name: 🧹 Cleanup SSH
         run: rm -rf ~/.ssh
