@@ -286,7 +286,7 @@ const RegistrationContainer = () => {
                 type="submit"
                 className="bg-yellow-500 text-white px-8 py-3 rounded-md hover:bg-yellow-600 transition-colors"
               >
-                Submit
+                Register
               </button>
             </div>
           </form>
