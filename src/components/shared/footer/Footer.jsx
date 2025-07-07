@@ -99,21 +99,29 @@ const Footer = () => {
               Get in Touch
             </h3>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li>2A/12 Alba Tower, Pallabi, Dhaka-1216, Bangladesh</li>
+              <li>স্বরূপচন্দ্র সরকারি উচ্চ বিদ্যালয়</li>
               <li>
                 <Link
                   href="mailto:info@demo.com"
                   className="hover:text-yellow-500 transition-colors"
                 >
-                  info@baitsbd.com
+                  ঠিকানা: ডাকঘর: জগন্নাথপুর, উপজেলা: জগন্নাথপুর, জেলা: সুনামগঞ্জ।
                 </Link>
               </li>
               <li>
                 <Link
-                  href="tel:+8801717-274777"
+                  href=""
                   className="hover:text-yellow-500 transition-colors"
                 >
-                  +8801923240700
+                  বিদ্যালয় কোড: ২৫৫০
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href=""
+                  className="hover:text-yellow-500 transition-colors"
+                >
+                  EIIN নম্বর: 129939
                 </Link>
               </li>
             </ul>
@@ -125,7 +133,7 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-3">
           <p className="text-center text-xs text-gray-400">
-            © 2023 All Rights Reserved by Sharupchandra Pilot School
+            © 2023 All Rights Reserved by Sharupchandra Pilot High School
           </p>
         </div>
       </div>
