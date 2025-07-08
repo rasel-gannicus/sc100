@@ -30,6 +30,16 @@ const template = ({ children }) => {
                 Notice Management
               </Link>
             </li>
+
+            <li>
+              <Link 
+                href="/admin/view-gallery" 
+                className={`block p-2 rounded ${pathname === '/admin/gallery' ? 'bg-gray-700' : 'hover:bg-gray-700'}`}
+              >
+                View Gallery
+              </Link>
+            </li>
+
             <li>
               <Link 
                 href="/admin/gallery" 

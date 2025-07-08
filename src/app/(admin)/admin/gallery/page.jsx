@@ -28,7 +28,7 @@ export default function ImageUploadPage() {
     });
 
     try {
-      const res = await fetch('http://localhost:8000/api/upload-multiple-images', {
+      const res = await fetch('http://localhost:8000/api/upload-images', {
         method: 'POST',
         body: formData,
       });
