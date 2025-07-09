@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 
 const template = ({ children }) => {
   const pathname = usePathname();
+  
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -31,14 +32,6 @@ const template = ({ children }) => {
               </Link>
             </li>
 
-            <li>
-              <Link 
-                href="/admin/view-gallery" 
-                className={`block p-2 rounded ${pathname === '/admin/gallery' ? 'bg-gray-700' : 'hover:bg-gray-700'}`}
-              >
-                View Gallery
-              </Link>
-            </li>
 
             <li>
               <Link 
