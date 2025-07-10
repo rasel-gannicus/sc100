@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import { useAuth } from "../../../../../components/Authentication/Authentication";
+import { useRouter } from "next/navigation";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const { login } = useAuth();
+  const { login, user } = useAuth();
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,13 +21,22 @@ const Login = () => {
     }
   };
 
+  if (user) {
+    router.push("/admin");
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">Admin Login</h1>
+        <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">
+          Admin Login
+        </h1>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Email
             </label>
             <input
@@ -39,7 +50,10 @@ const Login = () => {
             />
           </div>
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Password
             </label>
             <input
