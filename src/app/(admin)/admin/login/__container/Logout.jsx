@@ -12,7 +12,7 @@ const LogoutButton = ({ variant = 'primary', size = 'medium', className = '' }) 
         setIsLoading(true);
         try {
             await logout();
-            router.push('/login'); // Redirect to login page after logout
+            router.push('/admin/login'); // Redirect to login page after logout
         } catch (error) {
             console.error('Logout error:', error);
         } finally {

@@ -53,18 +53,39 @@ export default function ViewGallery() {
     }
   };
 
+  const toggleSelectAll = () => {
+    if (selectedIds.length === images.length) {
+      setSelectedIds([]);
+    } else {
+      setSelectedIds(images.map(img => img.id));
+    }
+  };
+
   return (
     <div className="p-6 max-w-6xl mx-auto">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold">📸 Uploaded Images</h2>
-        {selectedIds.length > 0 && (
-          <button
-            onClick={() => setShowMultiDeleteModal(true)}
-            className="bg-red-600 text-white px-4 py-2 rounded"
-          >
-            Delete Selected ({selectedIds.length})
-          </button>
-        )}
+        <div className="flex items-center space-x-4">
+          {images.length > 0 && (
+            <label className="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={selectedIds.length === images.length && images.length > 0}
+                onChange={toggleSelectAll}
+                className="w-4 h-4"
+              />
+              <span>Select All</span>
+            </label>
+          )}
+          {selectedIds.length > 0 && (
+            <button
+              onClick={() => setShowMultiDeleteModal(true)}
+              className="bg-red-600 text-white px-4 py-2 rounded"
+            >
+              Delete Selected ({selectedIds.length})
+            </button>
+          )}
+        </div>
       </div>
 
       {loading ? (
